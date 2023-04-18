@@ -48,6 +48,11 @@ public class MainActivity extends AppCompatActivity implements PermissionsListen
             getString(R.string.description_navigation_ui),
             NavigationUIActivity.class
         ));
+        list.add(new SampleItem(
+                "Sample1",
+                "Sample1",
+                DualNavigationMapActivity.class
+        ));
         RecyclerView.Adapter adapter = new MainAdapter(list);
         recyclerView.setAdapter(adapter);
 

@@ -55,4 +55,5 @@
     <string name="error_select_longer_route">Please select a longer route</string>
     <string name="error_valid_route_not_found">Valid route not found.</string>
     <string name="explanation_long_press_waypoint">Long press map to place waypoint</string>
+    <string name="map_view_style_url" translatable="false">https://api.maptiler.com/maps/streets/style.json?key=AVXR2vOTw3aGpqw8nlv2</string>
 </resources>

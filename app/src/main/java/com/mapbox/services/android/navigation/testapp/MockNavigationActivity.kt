@@ -238,7 +238,7 @@ class MockNavigationActivity :
                 call: Call<DirectionsResponse>,
                 response: Response<DirectionsResponse>,
             ) {
-                Timber.d("Url: %s", (call.request() as Request).url.toString())
+                Timber.d("Url: %s", (call.request() as Request).url().toString())
                 response.body()?.let { response ->
                     if (response.routes().isNotEmpty()) {
                         val directionsRoute = response.routes().first()
@@ -255,6 +255,7 @@ class MockNavigationActivity :
     }
 
     override fun onProgressChange(location: Location?, routeProgress: RouteProgress?) {
+        Timber.d("Url: %s", location?.latitude)
     }
 
     override fun onRunning(running: Boolean) {
